@@ -17,7 +17,7 @@ body .container {
 }
 body .navigation {
     position: fixed;
-    width: 150px;
+    width: 300px;
     height: 100%;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     background: #fff;
@@ -70,8 +70,8 @@ body .navigation ul li a:hover {
 }
 body .main {
     position: absolute;
-    width: calc(100% - 150px);
-    left: 150px;
+    width: calc(100% - 300px);
+    left: 300px;
     background: #fff;
     min-height: 100vh;
     -webkit-transition: width 0.5s, left 0.5s;
@@ -84,8 +84,8 @@ body .main.active {
 body .main .topbar {
     position: fixed;
     top: 0;
-    width: calc(100% - 150px);
-    left: 150px;
+    width: calc(100% - 300px);
+    left: 300px;
     background: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     height: 60px;

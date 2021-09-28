@@ -1,0 +1,1 @@
+addEventListener("DOMContentLoaded",(e=>{let t=document.querySelector(".toggle"),c=document.querySelector(".main"),o=document.querySelector(".topbar"),a=document.querySelector(".navigation");t.addEventListener("click",(e=>{t.classList.toggle("active"),c.classList.toggle("active"),o.classList.toggle("active"),a.classList.toggle("active")}))}));

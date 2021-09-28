@@ -1,0 +1,5 @@
+@mixin fuentes($obj) {
+    @each $id,$value in $obj {
+        #{$id}: $value;
+    }
+}

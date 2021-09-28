@@ -1,0 +1,30 @@
+include variables/_variables.pug
+doctype html
+html(lang="sp")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Hoja de vida
+        script(type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js") 
+        script(nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js")
+        link(rel="stylesheet", href="css/style.css")
+        script(src="js/main.js") 
+    body 
+        .container 
+            .navigation 
+                ul 
+                    each value, id in menu
+                        li
+                            a(href=""+value.href)=value.name
+            .main
+                .topbar 
+                    a.logo(href="#")=portafolio
+                    .toggle
+                        #{iconos.Name}(name=""+iconos.Menu)
+                section.banner#banner 
+                    .content 
+                        .imgBx
+                            img(src=""+Perfil.img, alt="s")
+                        h3=Perfil.Name
+                        p=Perfil.description			

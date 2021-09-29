@@ -27,4 +27,18 @@ html(lang="sp")
                         .imgBx
                             img(src=""+Perfil.img, alt="s")
                         h3=Perfil.Name
-                        p=Perfil.description			
+                        p=Perfil.description
+                        a.btn(href=""+Botones.Hoja.href)=Botones.Hoja.name
+                        ul.socialMedia
+                            each value, id in iconos.RedesSociales
+                                li
+                                    a(href=""+value.href)
+                                        #{iconos.Name}(name=""+value.name)
+                section.about.adjust#about
+                    .title 
+                        h2=menuIformacion.about.Titulo
+                    .content
+                        .textBox 
+                            p !{menuIformacion.about.Texto}
+                        .imgBx 
+                            img(src=""+menuIformacion.about.Imagen.src, alt=""+menuIformacion.about.Imagen.alt)

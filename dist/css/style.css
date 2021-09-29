@@ -132,3 +132,165 @@ body .main .topbar .toggle ion-icon {
     font-size: 35px;
     color: #333;
 }
+body .main .adjust {
+    position: relative;
+    min-height: 100vh;
+    padding: 0 40px;
+    padding-top: 80px;
+    background: #fff;
+    color: #333;
+    display: inline-block;
+}
+body .main .adjust .title {
+    width: 100%;
+    text-align: center;
+}
+body .main .adjust .title h2 {
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+body .main .adjust .title h2::before {
+    content: "";
+    position: absolute;
+    -webkit-transform: -50%;
+            transform: -50%;
+    margin: auto;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 1px;
+    background: #333;
+}
+body .main .adjust .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+}
+body .main .adjust .content .textBox {
+    width: 49%;
+    min-width: 49%;
+}
+body .main .adjust .content .textBox p {
+    font-weight: 300;
+    color: #777;
+    font-size: 1.2em;
+}
+body .main .adjust .content .imgBx {
+    margin-left: 40px;
+}
+body .main .adjust .content .imgBx img {
+    max-width: 100%;
+}
+body section {
+    position: relative;
+    min-height: 100vh;
+}
+body .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+}
+body .banner .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+body .banner .imgBx {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+body .banner .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+body .banner h3 {
+    position: relative;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+body .banner p {
+    color: #777;
+    font-weight: 300;
+}
+body .banner .btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+body .banner .socialMedia {
+    position: absolute;
+    bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+body .banner .socialMedia li {
+    list-style: none;
+}
+body .banner .socialMedia li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+body .banner .socialMedia li a:hover {
+    background: #333;
+    color: #fff;
+}

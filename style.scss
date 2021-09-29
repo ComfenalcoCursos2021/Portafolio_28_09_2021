@@ -108,5 +108,138 @@ body{
                             }
                         }
                 }
+                .adjust{
+                    position: relative;
+                    min-height: 100vh;
+                    padding: 0 40px;
+                    padding-top: 80px;
+                    background: nth($white, 1);
+                    color: nth($black, 1);
+                    display: inline-block;
+                        .title{
+                            width: 100%;
+                            text-align: center;
+                                h2{
+                                    position: relative;
+                                    @include fuentes(map-get($Fuentes, "500"));
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;
+                                    font-size: 1.2em;
+                                    margin-bottom: 30px;
+                                        &::before{
+                                            content: '';
+                                            position: absolute;
+                                            transform: (-50%);
+                                            margin: auto;
+                                            bottom: -10px;
+                                            left: 0;
+                                            right: 0;
+                                            width: 90%;
+                                            height: 1px;
+                                            background: nth($black, 1);
+                                        }
+                                }
+                        }
+                        .content{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 40px;
+                                .textBox{
+                                    width: 49%;
+                                    min-width: 49%;
+                                        p{
+                                            @include fuentes(map-get($Fuentes, "300"));
+                                            color: nth($black, 4);
+                                            font-size: 1.2em;
+                                        }
+                                }
+                                .imgBx{
+                                    margin-left: 40px;
+                                        img{
+                                            max-width: 100%;
+                                        }
+                                }
+                        }
+                }
+        }
+        section{
+            position: relative;
+            min-height: 100vh;
+        }
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .imgBx{
+                    position: relative;
+                    width: $tamañoFotoPerfil;
+                    height: $tamañoFotoPerfil;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                }
+                h3{
+                    position: relative;
+                    font-size: 1.4em;
+                    @include fuentes(map-get($Fuentes, "500"));
+                    color: nth($black, 1);
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                p{
+                    color: nth($black, 4);
+                    @include fuentes(map-get($Fuentes, "300"));
+                }
+                .btn{
+                    position: relative;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    background: nth($black, 2);
+                    color: nth($white, 1);
+                    @include fuentes(map-get($Fuentes, "400"));
+                    letter-spacing: 1px;
+                    margin-top: 10px;
+                    text-decoration: none;
+                }
+                .socialMedia{
+                    position: absolute;
+                    bottom: 20px;
+                    display: flex;
+                        li{
+                            list-style: none;
+                                a{
+                                    display: inline-block;
+                                    width: 40px;
+                                    height: 40px;
+                                    background: nth($black, 3);
+                                    margin: 5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    color: nth($black, 1);
+                                    font-size: 1.2em;
+                                        &:hover{
+                                            background: nth($black, 2);
+                                            color: nth($white, 1);
+                                        }
+                                }
+                        }
+                }
         }
 }
